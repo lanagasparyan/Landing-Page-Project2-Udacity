@@ -13,10 +13,63 @@
 
 body {
     background: rgb(136, 203, 171);
-    background: linear-gradient(0deg, rgba(136, 203, 171, 1) 0%, rgba(0, 13, 60, 1) 100%);
+    background: linear-gradient(0deg, rgb(123, 214, 170) 0%, rgba(0, 13, 60, 1) 100%);
     margin: 0;
     font-family: 'Merriweather', serif;
     color: rgb(235, 239, 243);
+}
+
+#home {
+    margin-bottom: 3em;
+    margin-top: 5em;
+    color: rgb(212, 223, 223);
+    background-color: rgb(27, 6, 85);
+    font: 1em sans-serif;
+}
+
+img {
+    margin-left: 4em;
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 
@@ -45,6 +98,8 @@ h2 {
 p {
     line-height: 1.6em;
     color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
 }
 
 
@@ -99,7 +154,7 @@ html {
 }
 
 .navbara {
-    background-color: rgba(12, 19, 90, 0.397);
+    background-color: rgba(21, 59, 116, 0.397);
     display: block;
     color: rgb(239, 239, 240);
     text-align: center;
@@ -108,15 +163,16 @@ html {
     text-decoration: none;
 }
 
-.navbarli a:hover {
-    background-color: rgba(19, 15, 15, 0.308);
+.navbarli a:hover,
+.navactive {
+    background-color: rgba(13, 16, 46, 0.644);
 }
 
 
 /* Header Styles */
 
 .page__header {
-    background: rgb(255, 255, 255, 0.187);
+    background: rgba(16, 44, 63, 0.187);
     position: fixed;
     top: 0;
     width: 100%;
@@ -127,7 +183,7 @@ html {
 /* Footer Styles */
 
 .page__footer {
-    background: #000;
+    background: rgba(10, 26, 37, 0.493);
     padding: 3em;
     color: #fff;
 }
